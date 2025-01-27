@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 100px;
+    margin: 10px;
+}
+
+.nav-items > ul {
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    
+}
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+} 
+
+.restro-card{
+    margin: 2px;
+    padding: 5px;
+    width: 200px;
+    height: 320px;
+    background-color: #f0f0f0;
+}
+
+.restro-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.res-logo{
+    width: 100%;
+}
+.login {
+    height: 50px;
+    width: 80px;
+    margin: 20px;
+    cursor: pointer;
+}
+.filter {
+    display: flex;
+}
+.search {
+    margin: 10px;
+}
