@@ -70,3 +70,25 @@
     padding: 10px;
     border: 1px solid black;
 }
+.shimmer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+  }
+  
+  .shimmer-class {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite ease-in-out;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  @keyframes shimmer {
+    100% {
+      background-position: -200% 0;
+    }
+  }
