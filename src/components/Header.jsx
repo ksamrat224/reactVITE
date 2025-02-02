@@ -2,7 +2,6 @@ import React from "react";
 import { LOGO_URL } from "../utils/constants";
 import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
-
 const Header = () => {
   const[btnNameReact,setBtnNameReact]= useState("login");
  //if no dependency array => useEffect is called on every render 
@@ -11,6 +10,7 @@ const Header = () => {
   useEffect(()=>{
     console.log("useEffect called");
   },[btnNameReact]);
+
 
     return (
       <div className="header">
@@ -22,6 +22,7 @@ const Header = () => {
         </div>
         <div className="nav-items">
           <ul>
+            
             <li>
               <Link>Home</Link>
             </li>
