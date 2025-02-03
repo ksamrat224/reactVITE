@@ -9,7 +9,7 @@ const RestaurantMenu = () => {
 
   const resInfo =useRestaurantMenu(resId);
 
-  if (!resInfo) return <Shimmer />;
+  if (!resInfo) return <Shimmer/>; 
 
   const { name, cuisines, costForTwoMessage } =
     resInfo?.cards?.[2]?.card?.card?.info || {};
