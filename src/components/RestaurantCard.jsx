@@ -4,7 +4,7 @@ const RestaurantCard = ({ resData }) => {
   const { cloudinaryImageId, name, cuisines, avgRating, sla, totalRatingsString } = resData?.info || {};
 
   return (
-    <div className="restro-card" style={{ backgroundColor: "#d6d6d6" }}>
+    <div className="restro-card m-4 p-4" style={{ backgroundColor: "#d6d6d6" }}>
       <img alt="res-logo" className="res-logo" src={CDN_URL + cloudinaryImageId} />
       <h3>{name}</h3>
       <h4>{cuisines?.join(", ")}</h4>

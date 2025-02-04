@@ -14,31 +14,31 @@ const Header = () => {
 
    const onlineStatus=useOnlineStatus();
     return (
-      <div className="flex justify-between  ">
+      <div className="flex justify-between bg-pink-100 shadow-lg m-2">
         <div className="logo-container">
           <img
-            className="w-35"
+            className="w-56"
             src= {LOGO_URL} 
           />
         </div>
-        <div className="nav-items">
-          <ul className="flex p-5 m-4">
-            <li>
+        <div className="flex items-center ">
+          <ul className="flex p-4 m-4">
+            <li className="px-4">
               Online Status: {onlineStatus? "🟢":"🔴"}
             </li>
-            <li>
+            <li className="px-4">
               <Link>Home</Link>
             </li>
-            <li>
+            <li className="px-4">
               <Link to="/about" >About Us</Link>
             </li>
-            <li>
+            <li className="px-4">
               <Link to="/contact">Contact Us</Link>
             </li>
-            <li>
+            <li className="px-4">
               <Link to="/grocery">Grocery</Link>
             </li>
-            <li>
+            <li className="px-4">
               <Link >Cart</Link>
             </li> 
             <button className="login"
