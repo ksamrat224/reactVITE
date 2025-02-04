@@ -1,4 +1,8 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
     padding: 0;
     margin: 0;
 }
@@ -91,4 +95,4 @@
     100% {
       background-position: -200% 0;
     }
-  }
+  }  */
