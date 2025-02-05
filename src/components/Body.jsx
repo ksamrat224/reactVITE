@@ -64,7 +64,7 @@ const Body = () => {
         </button>
         </div>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap ">
         {filteredRestaurants.map((restaurant) => (
           <Link
             style={{ textDecoration: "none", color: "black" }}
