@@ -1,21 +1,3 @@
-// const ItemList= ({items})=> {
-//     console.log(items);
-//     return(
-//         <div>
-//          {items.map((item)=> (
-//             <div key={item.itemCards.card.info.id}>
-//                 <div>
-//                     <span>{item.itemCards.card.info.name}</span>
-//                     <span>{item.itemCards.card.info.price}</span>
-//                 </div>
-//                 <p>{item.itemCards.card.info.description} </p>
-                
-//             </div>
-//          ))}
-//         </div>
-//     );
-// };
-// export default ItemList;
 import { CDN_URL } from "../utils/constants";
 const ItemList = ({ items }) => {
     console.log(items); 
