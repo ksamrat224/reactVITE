@@ -11,6 +11,7 @@ import Shimmer from "./components/Shimmer.jsx";
 import UserContext from "./utils/UserContext.js";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.jsx";
+import Cart from "./components/Cart.jsx";
 
 const Grocery= lazy(()=>import("./components/Grocery.jsx"));
 const AppLayout = () => {
@@ -24,14 +25,14 @@ const AppLayout = () => {
     setUserName(data.name);
   },[]);
   return ( 
-    <provider store={appStore}>
+    <Provider store={appStore}>
     <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
     <div className="app">
       <Header/>
       <Outlet/>
     </div>
     </UserContext.Provider>
-    </provider>
+    </Provider>
   );
 };
 
@@ -59,7 +60,12 @@ const appRouter = createBrowserRouter([
       {
         path:"/grocery",
         element:<Suspense fallback={<Shimmer/>}><Grocery/></Suspense>,
-      }
+      },
+      {
+        path:"/cart",
+        element:<Cart/>,
+      },
+
 
     ],
     errorElement: <Error/>, 
